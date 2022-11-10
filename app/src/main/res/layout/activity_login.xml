@@ -37,9 +37,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             app:endIconMode="clear_text"
+            app:endIconTint="@color/warna5"
             app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -49,6 +50,7 @@
                 android:background="@drawable/bg_edittext"
                 android:fontFamily="@font/poppins"
                 android:hint="@string/email"
+                android:padding="15dp"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/warna4"
                 android:textColorHint="@color/warna5"
@@ -58,9 +60,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:endIconMode="password_toggle"
+            app:endIconTint="@color/warna5"
             app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -70,6 +73,7 @@
                 android:background="@drawable/bg_edittext"
                 android:fontFamily="@font/poppins"
                 android:hint="@string/password"
+                android:padding="15dp"
                 android:inputType="textPassword"
                 android:textColor="@color/warna4"
                 android:textColorHint="@color/warna5"
@@ -78,6 +82,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/txt_forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -87,17 +92,24 @@
             android:textColor="@color/warna5"
             android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/bg_button"
-            android:fontFamily="@font/poppins"
-            android:text="@string/sign_in"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:textSize="19sp" />
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginTop="20dp"
+           app:cardCornerRadius="20dp"
+           app:cardElevation="0dp"
+           app:cardBackgroundColor="@color/warna3">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sign-In"
+               android:layout_gravity="center"
+               android:textColor="@color/white"
+               android:textSize="19sp"
+               android:textAlignment="center"/>
+
+       </androidx.cardview.widget.CardView>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
