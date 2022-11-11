@@ -11,7 +11,6 @@
         android:id="@+id/fl_attendance"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_below="@id/bn_attendance"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/bn_attendance"/>
 
