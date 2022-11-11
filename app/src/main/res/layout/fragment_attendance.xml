@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".views.fragment.attendance.AttendanceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <fragment
+        android:id="@+id/map_attendance"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
 
-</FrameLayout>
+    <include
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_current_time_dialog"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_get_current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_position"
+        android:translationY="-48dp"
+        app:layout_anchor="@id/layout_bottom_sheet"
+        app:layout_anchorGravity="top|end" />
+
+    <include
+        android:id="@+id/layout_bottom_sheet"
+        layout="@layout/bottomsheet_attendance" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
