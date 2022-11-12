@@ -51,6 +51,9 @@ dependencies {
     //Anko
     implementation 'org.jetbrains.anko:anko-commons:0.10.8'
 
+    //Calendaar View
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
     //Circle ImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 

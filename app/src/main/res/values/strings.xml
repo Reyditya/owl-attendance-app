@@ -11,4 +11,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="current_location">Current Location</string>
     <string name="default_lokasi">default lokasi</string>
+    <string name="month">SEP</string>
+    <string name="date">02</string>
+    <string name="check_out">Check-Out</string>
+    <string name="check_in">Check-In</string>
+    <string name="default_time">10:00</string>
 </resources>
