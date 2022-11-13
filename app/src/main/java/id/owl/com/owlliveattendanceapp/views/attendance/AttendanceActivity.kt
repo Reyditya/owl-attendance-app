@@ -1,7 +1,10 @@
 package id.owl.com.owlliveattendanceapp.views.attendance
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import id.owl.com.owlliveattendanceapp.R
 import id.owl.com.owlliveattendanceapp.databinding.ActivityAttendanceBinding
@@ -18,6 +21,17 @@ class AttendanceActivity : AppCompatActivity() {
         binding = ActivityAttendanceBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
+        setFlags()
+    }
+
+    private fun setFlags() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            val w: Window = window
+            w.setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+            )
+        }
     }
 
     private fun init() {
