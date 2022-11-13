@@ -38,7 +38,9 @@
             app:headerLabelColor="@color/warna7"
             app:pagesColor="@color/warna2"
             app:previousButtonSrc="@drawable/ic_baseline_keyboard_arrow_left_24"
-            app:todayLabelColor="@color/warna3" />
+            app:todayLabelColor="@color/warna3"
+            />
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="240dp"

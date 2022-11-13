@@ -25,7 +25,6 @@
         android:id="@+id/fab_get_current_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:backgroundTint="@android:color/white"
         android:src="@drawable/ic_position"
         android:translationY="-48dp"

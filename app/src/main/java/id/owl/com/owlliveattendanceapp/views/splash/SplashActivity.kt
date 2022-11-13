@@ -32,6 +32,7 @@ class SplashActivity : AppCompatActivity() {
     private fun splash() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity<LoginActivity>()
+            finishAffinity()
         }, 2000)
     }
 }

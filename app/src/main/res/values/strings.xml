@@ -21,4 +21,7 @@
     <string name="old_password">*******</string>
     <string name="new_password">*******</string>
     <string name="confirm_new_password">*******</string>
+    <string name="sign_out">Sign-Out</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_password">Change Password</string>
 </resources>
