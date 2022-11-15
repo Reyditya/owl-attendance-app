@@ -8,6 +8,8 @@ import android.os.Looper
 import android.view.Window
 import android.view.WindowManager
 import id.owl.com.owlliveattendanceapp.R
+import id.owl.com.owlliveattendanceapp.hawkstorage.HawkStorage
+import id.owl.com.owlliveattendanceapp.views.attendance.AttendanceActivity
 import id.owl.com.owlliveattendanceapp.views.login.LoginActivity
 import org.jetbrains.anko.startActivity
 
@@ -31,8 +33,18 @@ class SplashActivity : AppCompatActivity() {
 
     private fun splash() {
         Handler(Looper.getMainLooper()).postDelayed({
+            checkIsLogin()
+        }, 2000)
+    }
+
+    private fun checkIsLogin() {
+        val isLogin = HawkStorage.instance(this).isLogin()
+        if (isLogin){
+            startActivity<AttendanceActivity>()
+            finishAffinity()
+        }else{
             startActivity<LoginActivity>()
             finishAffinity()
-        }, 2000)
+        }
     }
 }
