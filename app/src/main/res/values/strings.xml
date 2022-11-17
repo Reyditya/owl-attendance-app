@@ -24,4 +24,8 @@
     <string name="sign_out">Sign-Out</string>
     <string name="change_language">Change Language</string>
     <string name="change_password">Change Password</string>
+    <string name="please_field_your_email">Please, field your email!</string>
+    <string name="please_use_valid_email">Please, use valid email!</string>
+    <string name="please_field_your_password">Please field your password!</string>
+
 </resources>
