@@ -28,6 +28,7 @@
         android:backgroundTint="@android:color/white"
         android:src="@drawable/ic_position"
         android:translationY="-48dp"
+        android:layout_marginRight="20dp"
         app:layout_anchor="@id/layout_bottom_sheet"
         app:layout_anchorGravity="top|end" />
 
