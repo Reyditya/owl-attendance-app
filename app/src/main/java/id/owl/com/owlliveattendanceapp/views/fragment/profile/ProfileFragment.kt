@@ -1,16 +1,17 @@
 package id.owl.com.owlliveattendanceapp.views.fragment.profile
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import id.owl.com.owlliveattendanceapp.MainActivity
 import id.owl.com.owlliveattendanceapp.databinding.FragmentProfileBinding
 import id.owl.com.owlliveattendanceapp.views.changepassword.ChangePasswordActivity
 import id.owl.com.owlliveattendanceapp.views.login.LoginActivity
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
+
 
 class ProfileFragment : Fragment() {
 
@@ -38,7 +39,7 @@ class ProfileFragment : Fragment() {
         }
         binding?.cvSignOut?.setOnClickListener {
             context?.startActivity<LoginActivity>()
-            (activity as MainActivity).finishAffinity()
+            (context as LoginActivity).finish()
         }
     }
 
